@@ -49,7 +49,6 @@ function a11yProps(index) {
 const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: theme.palette.background.paper,
-    width: 500,
   },
   appbar: {
     size: 200,
@@ -77,7 +76,7 @@ export default function FullWidthTabs(props) {
           onChange={handleChange}
           indicatorColor="primary"
           textColor="primary"
-          variant="fullWidth"
+          centered
           aria-label="full width tabs example"
         >
           <Tab label="Job" {...a11yProps(0)} />

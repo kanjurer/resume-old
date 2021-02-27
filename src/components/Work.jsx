@@ -28,7 +28,7 @@ export default function Work(props) {
 
   return (
     <>
-      <div classNam={classes.rightContent}>
+      <div className={classes.rightContent}>
         {" "}
         <Typography variant="h2" component="h2" gutterBottom>
           work experience
