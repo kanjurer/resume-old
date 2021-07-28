@@ -1,25 +1,25 @@
-import React from "react";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
+import React from 'react';
+import { makeStyles, useTheme } from '@material-ui/core/styles';
 
-import Button from "@material-ui/core/Button";
-import Grid from "@material-ui/core/Grid";
-import Typography from "@material-ui/core/Typography";
-import Divider from "@material-ui/core/Divider";
-import useMediaQuery from "@material-ui/core/useMediaQuery";
+import Button from '@material-ui/core/Button';
+import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
+import Divider from '@material-ui/core/Divider';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
-import PhoneSharpIcon from "@material-ui/icons/PhoneSharp";
-import EmailSharpIcon from "@material-ui/icons/EmailSharp";
+import PhoneSharpIcon from '@material-ui/icons/PhoneSharp';
+import EmailSharpIcon from '@material-ui/icons/EmailSharp';
 
-import { default as data } from "../data";
+import { default as data } from '../data';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: "flex",
+    display: 'flex',
   },
   grid: {
-    position: "relative",
-    width: "1200px",
-    left: "80px",
+    position: 'relative',
+    width: '1200px',
+    left: '80px',
   },
   rightContent: {
     flexGrow: 1,
@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Contact(props) {
   const classes = useStyles();
   const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.down("sm"));
+  const matches = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
     <>
@@ -83,22 +83,7 @@ export default function Contact(props) {
       <br />
       <Divider />
       <br />
-      <div className={classes.rightContent}>
-        <Typography variant="h2" component="h2" gutterBottom>
-          other platforms
-        </Typography>
-        <Grid container xs={12}>
-          {data.socialMedia.map((item) => {
-            return (
-              <>
-                <Grid item>
-                  <Button href={item.url}>{item.icon}</Button>
-                </Grid>
-              </>
-            );
-          })}
-        </Grid>
-      </div>
+
       <br />
       <Divider />
       <br />
